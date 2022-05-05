@@ -39,7 +39,7 @@ export default function AddTodo() {
         />
         <input
           type="number"
-          placeholder=" Enter Quantity"
+          placeholder=" Enter quantity"
           value={quan}
           onChange={(e) => setQuan(e.target.value)}
         />

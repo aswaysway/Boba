@@ -8,10 +8,11 @@ body {
   background-color: #d4cbc1;
 }
 .title h1 {
+  background-color: #bfb3a3;
   color: #484545;
   text-align: center;
   margin: 30px 0;
-  padding: 0;
+  padding: ;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
@@ -19,11 +20,11 @@ body {
 form {
   max-width: 300px;
   margin: 0 auto;
-  background: white;
+  background: whitesmoke;
   padding: 10px 20px;
   margin-top: 50px;
   border-radius: 5px;
-  box-shadow: 2px 3px 10px #ddd;
+  box-shadow: 2px 3px 10px rgb(98, 91, 91);
 }
 form h3 {
   text-align: center;
@@ -33,7 +34,7 @@ form input {
   margin: 8px 0px;
   padding: 8px 0px;
   outline: none;
-  font-size: 0.7em;
+  font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
@@ -45,13 +46,13 @@ form input {
   margin-bottom: 10px;
 }
 .btn_container button {
-  background: #333;
+  background: #363636;
   color: white;
   padding: 10px 20px;
   outline: none;
   border: none;
   border-radius: 5px;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -76,7 +77,7 @@ form input {
   justify-content: space-around;
   align-items: center;
   box-shadow: 2px 3px 3px #ddd;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 .todo div {
   cursor: pointer;
@@ -92,10 +93,10 @@ form input {
 .todo div span{
   font-family: "Poppins", sans-serif;
   font-weight: 200;
-  color: #6c5944f1;
+  color: #554d43b3;
 }
 .todo .date {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: darkgrey;
