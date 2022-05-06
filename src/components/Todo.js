@@ -14,9 +14,9 @@ export default function Todo({
         { todo.date }
       </div>
       <div class="content" style={{ textDecoration: todo.completed && "line-through" }} type="text">
-        { todo.winner === "" ? newWinner : todo.winner }
-        &nbsp;<span>owe</span>&nbsp;
         { todo.loser }
+        &nbsp;<span>owe</span>&nbsp;
+        { todo.winner === "" ? newWinner : todo.winner }
         &nbsp;
         <span>{ todo.quan }</span>
       </div>
