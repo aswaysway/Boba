@@ -11,7 +11,7 @@ export default function Todo({
   return (
     <div className="todo">
       <div class="date">
-        { todo.date }
+        { todo.selectedDate }
       </div>
       <div class="content" style={{ textDecoration: todo.completed && "line-through" }} type="text">
         { todo.loser }
@@ -19,6 +19,7 @@ export default function Todo({
         { todo.winner === "" ? newWinner : todo.winner }
         &nbsp;
         <span>{ todo.quan }</span>
+        <br /><span className="note">NOTE: </span><span className="todonote">{ todo.note }</span>
       </div>
       <div class="btn">
         <button

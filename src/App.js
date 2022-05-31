@@ -1,8 +1,10 @@
 import "./App.css";
 import React from "react";
+import { useState, useRef } from "react";
 import Title from "./components/Title";
 import AddTodo from "./components/AddTodo";
 import Todo from "./components/Todo";
+// import Dialog from './Dialog';
 import {
   collection,
   query,
@@ -15,6 +17,14 @@ import { db } from "./firebase";
 
 function App() {
   const [todos, setTodos] = React.useState([]);
+  // const [dialog, setDialog] = React.useState({
+  //   isLoading: false,
+  // });
+  // const handleDialog = (isLoading) => {
+  //   setDialog({
+  //     isLoading,
+  //   })
+  // }
 
   React.useEffect(() => {
     const q = query(collection(db, "todos"));
@@ -37,6 +47,7 @@ function App() {
   const handleDelete = async (id) => {
     await deleteDoc(doc(db, "todos", id));
   };
+
   return (
     <div className="App">
       <div>
@@ -56,6 +67,7 @@ function App() {
           />
         ))}
       </div>
+      {/* {dialog.isLoading && <Dialog onDialog={areYouSureDelete} />} */}
     </div>
   );
 }
