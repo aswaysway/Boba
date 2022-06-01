@@ -4,14 +4,11 @@
   align-items: center;
   justify-content: center;
 }
-html, body {
+html {
   height: 100%;
-}
-body {
-  background-color: #d4cbc1;
   background: #3E5151;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #d5cbc0, #b3a799);  /* Chrome 10-25, Safari 5.1-6*/
-  background: linear-gradient(to bottom, #d5cbc0, #b3a799); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to bottom, #d5cbc0, #91887d);  /* Chrome 10-25, Safari 5.1-6*/
+  background: linear-gradient(to bottom, #d5cbc0, #91887d); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .title h1 {
   color: #484545;

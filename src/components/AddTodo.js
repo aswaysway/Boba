@@ -31,8 +31,10 @@ export default function AddTodo() {
     <form onSubmit={handleSubmit}>
       <div className="input_container">
         <input
-          type="date"
-          DateFormat="mm/dd/yyyy"
+          type="text"
+          placeholder=" Date"
+          onFocus={(e) => (e.target.type = "date")}
+          onBlur={(e) => (e.target.type = "text")}
           value={selectedDate}
           onChange={(e) => setSelectedDate(e.target.value)}
         />
