@@ -5,13 +5,18 @@
   justify-content: center;
 }
 html {
-  height: 100%;
   background: #3E5151;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #d5cbc0, #91887d);  /* Chrome 10-25, Safari 5.1-6*/
   background: linear-gradient(to bottom, #d5cbc0, #91887d); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .title h1 {
-  color: #484545;
+  color: #4f4d4d;
+  text-shadow: 2px 2px 0 #a0a0a0;
   text-align: center;
   margin: 30px 0;
   padding: 0;
@@ -39,6 +44,19 @@ form input {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+}
+form .date_container {
+  display: flex;
+  flex-direction: row;
+}
+form .date_container p {
+  color: #484545;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-top: 4px;
+  margin-right: 13px;
 }
 .input_container {
   margin-bottom: 20px;

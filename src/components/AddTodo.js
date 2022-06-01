@@ -30,14 +30,15 @@ export default function AddTodo() {
   return (
     <form onSubmit={handleSubmit}>
       <div className="input_container">
+       <div className="date_container">
+       <p className="date">Date</p>
         <input
-          type="text"
+          type="date"
           placeholder=" Date"
-          onFocus={(e) => (e.target.type = "date")}
-          onBlur={(e) => (e.target.type = "text")}
           value={selectedDate}
           onChange={(e) => setSelectedDate(e.target.value)}
         />
+       </div>
         <input
           type="text"
           placeholder=" Enter winner"
