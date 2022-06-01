@@ -1,9 +1,9 @@
 import React from "react";
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+// import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import DeleteIcon from '@mui/icons-material/Delete';
 export default function Todo({ 
     todo,
-    toggleComplete,
+    // toggleComplete,
     handleDelete,
 }) {
   const [newWinner, setNewWinner] = React.useState(todo.winner);
@@ -13,7 +13,7 @@ export default function Todo({
       <div class="date">
         { todo.selectedDate }
       </div>
-      <div class="content" style={{ textDecoration: todo.completed && "line-through" }} type="text">
+      <div class="content" type="text"> {/* style={{ textDecoration: todo.completed && "line-through" }}  */}
         { todo.loser }
         &nbsp;<span>owe</span>&nbsp;
         { todo.winner === "" ? newWinner : todo.winner }
@@ -22,12 +22,12 @@ export default function Todo({
         <br /><span className="note">NOTE: </span><span className="todonote">{ todo.note }</span>
       </div>
       <div class="btn">
-        <button
+        {/* <button
           className="button-complete"
           onClick={() => toggleComplete(todo)}
         >
           <CheckCircleIcon id="i" />
-        </button>
+        </button> */}
         <button className="button-delete" onClick={() => handleDelete(todo.id)}>
           <DeleteIcon id="i" />
         </button>

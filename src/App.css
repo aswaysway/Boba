@@ -121,6 +121,9 @@ form .date_container p {
   font-weight: 500;
   color: darkgrey;
 }
+.todo .content {
+  padding-left: 5px;
+}
 .todo .note {
   font-size: 0.7rem;
 }
@@ -132,7 +135,7 @@ form .date_container p {
   display: flex;
   justify-content:flex-end;
 }
-.button-complete,
+/* .button-complete, */
 .button-delete {
   border: none;
   outline: none;
@@ -145,13 +148,13 @@ form .date_container p {
 #i {
   font-size: 2em;
 }
-.button-complete {
+/* .button-complete {
   color: #8de899;
   margin-right: 10px;
-}
-.button-complete:hover {
+} */
+/* .button-complete:hover {
   color: #00680e;
-}
+} */
 .button-delete {
   color: rgb(233, 146, 146);
 }
