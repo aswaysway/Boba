@@ -68,6 +68,7 @@ function App() {
         ))}
       </div>
       {/* {dialog.isLoading && <Dialog onDialog={areYouSureDelete} />} */}
+      <footer>Copyright &copy; 2022</footer>
     </div>
   );
 }
